@@ -16,4 +16,8 @@ for n in range(0,int(EmployeeNumber)):
 
     TotalProperties += int(PropertiesSold)
 
-    RankingArray += [EmployeeName],[EmployeeID],[PropertiesSold]
+    RankingArray += [EmployeeID, PropertiesSold]
+
+RankingArray.sort()
+
+print(RankingArray)
