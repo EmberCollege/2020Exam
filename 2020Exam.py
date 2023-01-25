@@ -1,4 +1,7 @@
+RankingArray = []
+
 TotalCommission = 0
+TotalProperties = 0
 
 EmployeeNumber = input("How many employees are there in the company? ")
 
@@ -9,7 +12,8 @@ for n in range(0,int(EmployeeNumber)):
     PropertiesSold = input("Enter the amount of properties sold ")
 
     SalesCommission = int(PropertiesSold) * 500
+    TotalCommission += SalesCommission
 
-    TotalCommission =+ int(SalesCommission)
+    TotalProperties += int(PropertiesSold)
 
-print(TotalCommission)
+    RankingArray += [EmployeeName],[EmployeeID],[PropertiesSold]
